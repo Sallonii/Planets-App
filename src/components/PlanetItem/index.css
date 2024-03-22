@@ -1,0 +1,10 @@
+.planet-image {
+  height: 200px;
+}
+.planet-li-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
