@@ -2,13 +2,14 @@ import './index.css'
 
 const PlanetItem = props => {
   const {eachPlanetDetails} = props
-  const {name, imageUrl, description} = eachPlanetDetails
+  const {imageUrl, name, description} = eachPlanetDetails
+
   return (
-    <li className="planet-li-container">
-      <img src={imageUrl} alt={name} className="planet-image" />
+    <div data-testid="planets" className="planet-container">
+      <img src={imageUrl} alt={`planet ${name}`} className="planet-image" />
       <h1>{name}</h1>
       <p>{description}</p>
-    </li>
+    </div>
   )
 }
 
