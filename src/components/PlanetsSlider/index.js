@@ -4,9 +4,6 @@ import PlanetItem from '../PlanetItem'
 
 import './index.css'
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-
 const PlanetsSlider = props => {
   const {planetsList} = props
 
@@ -16,7 +13,7 @@ const PlanetsSlider = props => {
     slidesToScroll: 1,
   }
   return (
-    <div className="slider-container">
+    <div className="slider-container" data-testid="planets">
       <h1 className="planet-heading">Planets</h1>
       <Slider {...settings}>
         {planetsList.map(eachPlanet => (
